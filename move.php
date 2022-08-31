@@ -111,7 +111,8 @@ if ($winner) {
     }
     $winner['grid'] = $game['grid'];
     
-    $mysqli = new mysqli(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB_NAME'));
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$mysqli = new mysqli($url["host"], $url["user"], $url["pass"], substr($url["path"], 1));
     if (mysqli_connect_errno()) {
         printf("Подключение невозможно: %s\n", mysqli_connect_error());
         exit();
