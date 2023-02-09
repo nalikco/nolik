@@ -1,0 +1,16 @@
+{
+    "name": "nalikby/nolik",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "iikworks",
+            "email": "johndevice834@gmail.com"
+        }
+    ],
+    "require": {}
+}

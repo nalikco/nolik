@@ -1,0 +1,13 @@
+CREATE TABLE players (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     name TEXT NOT NULL,
+     level INTEGER NOT NULL DEFAULT(1)
+);
+
+CREATE TABLE games (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     name TEXT NOT NULL,
+     grid TEXT NOT NULL,
+     team TEXT NOT NULL,
+     winner TEXT NOT NULL
+);
